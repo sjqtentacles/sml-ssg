@@ -1,0 +1,13 @@
+(* MLB for the sml-ssg library: the vendored sml-markdown and sml-template
+ * cores (which both pull in a single shared copy of sml-html + sml-buffer)
+ * plus the SSG pipeline.
+ *
+ * sml-html is referenced by both markdown's and template's sources.mlb via the
+ * same path, so MLton elaborates it exactly once. The dep .mlb files are
+ * brought in WITHOUT a `local` wrapper so consumers can use Markdown / Template
+ * alongside Ssg. *)
+$(SML_LIB)/basis/basis.mlb
+../lib/github.com/sjqtentacles/sml-markdown/sources.mlb
+../lib/github.com/sjqtentacles/sml-template/sources.mlb
+ssg.sig
+ssg.sml

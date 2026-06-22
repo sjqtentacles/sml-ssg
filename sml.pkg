@@ -1,0 +1,6 @@
+package github.com/sjqtentacles/sml-ssg
+
+require {
+  github.com/sjqtentacles/sml-markdown
+  github.com/sjqtentacles/sml-template
+}

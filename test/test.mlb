@@ -1,0 +1,9 @@
+(* Test executable basis: the ssg library (which pulls in the vendored
+ * sml-markdown + sml-template, sharing sml-html + sml-buffer) plus the harness
+ * and runner. *)
+$(SML_LIB)/basis/basis.mlb
+../src/ssg.mlb
+harness.sml
+test.sml
+entry.sml
+main.sml
